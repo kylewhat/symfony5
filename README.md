@@ -1,22 +1,14 @@
-# Symfony 5 docker containers
+# Symfony 5 + PHP-FPM + MySQL 8 + nginx
 
-A Proof-of-concept of a running Symfony 5 application inside containers
+Run a containerized symfony application
 
 ```
-git clone git@gitlab.com:martinpham/symfony-5-docker.git
-
-cd symfony-5-docker
+git clone git@gitlab.com:kylewhat/symfony5.git
 
 cd docker
 
 docker-compose up
 ```
-
-## Compose
-
-### Database (MariaDB)
-
-...
 
 ### PHP (PHP-FPM)
 
@@ -31,7 +23,3 @@ To run fixtures
 ```
 docker-compose run php-fpm bin/console doctrine:fixtures:load
 ```
-
-### Webserver (Nginx)
-
-...
