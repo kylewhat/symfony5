@@ -15,7 +15,7 @@ class HomeController extends AbstractController
      */
     public function index(PostRepository $postRepository)
     {
-			return null;
+
         $posts = $postRepository->findAll();
         return [
             'posts' => $posts
